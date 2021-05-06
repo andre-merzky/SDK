@@ -17,5 +17,6 @@ FROM exaworks/sdk-base
 run python3 -m pip install "cryptography==3.3.2" parsl
 
 COPY test.py /
-CMD /test.py
+COPY test.sh /
+CMD /test.sh
 
